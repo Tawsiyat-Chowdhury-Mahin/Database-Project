@@ -1,7 +1,4 @@
--- ====================================================================
--- FOOD WASTE MANAGEMENT SYSTEM - ENHANCED DATABASE
--- ====================================================================
-
+-- FOOD WASTE MANAGEMENT SYSTEM - DATABASE
 
 DROP DATABASE IF EXISTS food_waste_db;
 
@@ -97,9 +94,6 @@ CREATE TABLE activity_logs (
     INDEX idx_created (created_at),
     INDEX idx_action (action)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='System activity logging';
-
-
-
 
 
 INSERT INTO users (username, email, password_hash, role, full_name, phone, address, organization, vehicle_type, is_active) VALUES
